@@ -67,8 +67,37 @@
       <DependentUpon>CrystalReportListGroup.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="CrystalReportListStudents.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportListStudents.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportQuery.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportQuery.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSetStudents.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetStudents.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Entities\Group.cs" />
     <Compile Include="Entities\Student.cs" />
+    <Compile Include="FormListStudents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormListStudents.Designer.cs">
+      <DependentUpon>FormListStudents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormListStudentWithQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormListStudentWithQuery.Designer.cs">
+      <DependentUpon>FormListStudentWithQuery.cs</DependentUpon>
+    </Compile>
     <Compile Include="ListGroups.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +116,20 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CrystalReportListGroup.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportListStudents.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportListStudents.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportQuery.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportQuery.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormListStudents.resx">
+      <DependentUpon>FormListStudents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormListStudentWithQuery.resx">
+      <DependentUpon>FormListStudentWithQuery.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ListGroups.resx">
       <DependentUpon>ListGroups.cs</DependentUpon>
     </EmbeddedResource>
@@ -102,6 +145,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="DataSetStudents.xsc">
+      <DependentUpon>DataSetStudents.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetStudents.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetStudents.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetStudents.xss">
+      <DependentUpon>DataSetStudents.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

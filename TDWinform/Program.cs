@@ -16,7 +16,7 @@ namespace TDWinform
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ListGroups());
+            Application.Run(new FormListStudentWithQuery());
         }
     }
 }
